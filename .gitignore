@@ -1,0 +1,29 @@
+# OpenClaw 临时文件
+.openclaw/
+.clawhub/
+.clawdhub/
+
+# 备份目录（单独管理）
+backups/
+
+# 日志
+*.log
+
+# 临时文件
+*.tmp
+*.bak
+*~
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 敏感信息（如有）
+*.env
+*.secret
+*.key
+
+# 技能元数据（可选，如需版本控制可移除）
+skills/**/.clawhub/
+skills/**/.clawdhub/
+skills/**/_meta.json
