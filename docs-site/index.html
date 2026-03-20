@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文档中心 - 雷宛毓</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/themes/vue.css">
+    <style>
+        :root { --theme-color: #42b983; --sidebar-width: 300px; }
+        body { overflow-x: hidden; }
+        .app-nav { display: none !important; }
+        .sidebar { background: #ffffff !important; }
+        .sidebar .app-sub-sidebar { display: none !important; }
+        .sidebar ul li a { color: #2c3e50 !important; font-size: 15px; line-height: 2.2; font-weight: 500; cursor: pointer; }
+        .sidebar ul li a:hover { color: var(--theme-color) !important; }
+        .sidebar ul li.active > a { color: var(--theme-color) !important; font-weight: 600; }
+        .sidebar-nav > ul > li > a { color: #2c3e50 !important; font-weight: 600; }
+        .markdown-section { max-width: 900px; padding: 40px 20px; }
+        .markdown-section h1 { font-size: 2.5em; margin-bottom: 20px; border-bottom: 2px solid var(--theme-color); padding-bottom: 15px; }
+        .markdown-section h2 { margin-top: 40px; color: #2c3e50; }
+        .markdown-section code { background: #f8f8f8; padding: 2px 8px; border-radius: 4px; }
+        .markdown-section pre { background: #282c34; border-radius: 8px; padding: 20px; overflow-x: auto; }
+        .markdown-section pre code { background: transparent; color: #abb2bf; padding: 0; }
+        .markdown-section blockquote { border-left: 4px solid var(--theme-color); background: #f8f9fa; padding: 15px 20px; margin: 20px 0; }
+        .markdown-section table { border-collapse: collapse; width: 100%; margin: 20px 0; }
+        .markdown-section th, .markdown-section td { border: 1px solid #ddd; padding: 12px; text-align: left; }
+        .markdown-section th { background: #f8f9fa; font-weight: 600; }
+        .markdown-section tr:nth-child(even) { background: #fafafa; }
+        @media (max-width: 768px) {
+            .sidebar { background: #ffffff !important; box-shadow: 2px 0 8px rgba(0,0,0,0.1); }
+            .sidebar ul li a { color: #2c3e50 !important; font-size: 16px !important; }
+            .sidebar-nav > ul > li > a { font-size: 17px !important; font-weight: 600 !important; color: #1a252f !important; }
+            .markdown-section { padding: 20px 15px !important; font-size: 16px !important; }
+            .markdown-section h1 { font-size: 1.8em !important; }
+            .markdown-section h2 { font-size: 1.5em !important; }
+        }
+    </style>
+</head>
+<body>
+    <div id="app">加载中...</div>
+    <script>
+        window.$docsify = {
+            name: '📚 文档中心',
+            loadSidebar: true,
+            loadNavbar: false,
+            subMaxLevel: 0,
+            auto2top: true,
+            ext: '.md',
+            externalLinkTarget: '_blank',
+            routerMode: 'hash',
+            repo: '',
+            coverpage: false,
+            // 关键：禁用所有插件，避免链接被修改
+            plugins: []
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
+</body>
+</html>
